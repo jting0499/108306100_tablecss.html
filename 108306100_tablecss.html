@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		h1 { background-color: lightblue; }
+		span { color: black; font-size: 12pt; font-family: sans-serif;}
+		p { font-size:12pt; font-family: sans-serif; }
+		em { font-weight: bold;}
+		.extra span { color: inherit;}
+		.special {color: dodgerblue;}
+
+	</style>
+</head>
+<body>
+	<form>
+	<table style = "border:3px #cccccc solid;" cellpadding="10" border='1'> 
+
+		<tr><th colspan="3" ><h1> About -- 108306100 </th></h1></tr>
+
+		<tr><div class="extra" style="color:black">
+			<td rowspan="3"> <img src = "./picture/roastchicken.jpg" width="110" height="120">
+				<p> personal photo</p></td>
+			<td colspan="2"><span><em>Name: </em></span>
+					<input name="name" type="text" size="25" maxlength="30"> <br>
+				<span><em> Gender: </em></span>
+					<input type="radio" name="Gender" value="Male" checked> Male
+					<input type="radio" name="Gender" value="Female"> Female
+					<input type="radio" name="Gender" value="Other"> Other <br>
+			</td>
+			</div>
+		</tr>
+
+		<tr>
+			<td><span><em>County: </em></span>
+				<select name ="Country">
+				<option value="Taipei">Taipei</option>
+				<option value="Tainan">Tainan</option>
+				<option value="Taichung">Taichung</option>
+				<option value="Taoyuan">Taoyuan</option></td>
+			<td><span><em>Birthday: </em></span>
+				<input type="date"></td>
+		</tr>
+	
+		<tr>
+			<td colspan="2"><span><em>Email: </em></span>
+				<input name="Email" type="text" size="25" maxlength="30">
+			</td>
+		</tr>
+
+		<tr>
+		<td><div class="special"><em>Hobby </em></td>
+		<td colspan="2">
+			<input type="checkbox" name="Swimming">Swimming
+			<input type="checkbox" name="Volleyball">Volleyball
+			<input type="checkbox" name="Movie">Movie
+			<input type="checkbox" name="Game">Game
+			<input type="checkbox" name="Sleep">Sleep
+		</td></span></div>
+		</tr>
+	
+		<p><td><div class="special"><em>Skill</em></td>
+		<td colspan="2">
+			<input type="checkbox" name="Java">Java
+			<input type="checkbox" name=HTML>HTML
+			<input type="checkbox" name="Python">Python
+			<input type="checkbox" name="Microsoft Office">Microsoft Office
+			<input type="checkbox" name="Premiere">Premiere
+		</td></div>
+		
+		<tr>
+			<td><div class="special"><em>Say Something</em></td>
+			<td colspan="2">		
+ 			<textarea rows="4" cols="50"> Say something here.</textarea><br>
+			</td></div>
+		</tr>
+
+		<td colspan="3"><input type ="submit" value="提交">
+			<input type ="reset" value="重設"></td>
+	</table>
+	</form>
+</body>
+</html>
